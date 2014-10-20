@@ -1,14 +1,17 @@
-﻿using CarServiceRecords.Data;
-using CarServiceRecords.Models;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.Owin;
-using Microsoft.Owin;
-using Microsoft.Owin.Security.Cookies;
-using Owin;
-using System;
-
-namespace CarServiceRecords.Application
+﻿namespace CarServiceRecords.Application
 {
+    using System;
+
+    using CarServiceRecords.Data;
+    using CarServiceRecords.Models;
+
+    using Microsoft.AspNet.Identity;
+    using Microsoft.AspNet.Identity.Owin;
+    using Microsoft.Owin;
+    using Microsoft.Owin.Security.Cookies;
+
+    using Owin;
+
     public partial class Startup {
 
         // For more information on configuring authentication, please visit http://go.microsoft.com/fwlink/?LinkId=301883
