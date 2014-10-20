@@ -1,7 +1,4 @@
 Add validation attributes in the models.
-Add administrator master page.
-	add administrator login page.
-	add administrator control pages.
 
 Add front page car services search
 	by town
