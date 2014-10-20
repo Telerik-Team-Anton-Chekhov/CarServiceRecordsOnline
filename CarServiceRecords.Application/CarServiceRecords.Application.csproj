@@ -334,6 +334,10 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CarServiceRecords.Common\CarServiceRecords.Common.csproj">
+      <Project>{9eedbd01-52fa-40b4-9fd5-a3736880ae9e}</Project>
+      <Name>CarServiceRecords.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CarServiceRecords.Data\CarServiceRecords.Data.csproj">
       <Project>{6bc05ce9-108b-4082-adda-90605d72753a}</Project>
       <Name>CarServiceRecords.Data</Name>
