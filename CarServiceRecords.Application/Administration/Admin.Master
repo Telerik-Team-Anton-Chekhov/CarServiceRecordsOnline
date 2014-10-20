@@ -40,6 +40,22 @@
                         <li>
                             <a href="Users.aspx"><i class="fa fa-users fa-fw"></i> Users</a>
                         </li>
+
+                        <li>
+                            <a href="Cars.aspx"><i class="fa fa-car fa-fw"></i> Cars</a>
+                        </li>
+
+                        <li>
+                            <a href="CarServices.aspx"><i class="fa fa-wrench fa-fw"></i> Car Services</a>
+                        </li>
+
+                        <li>
+                            <a href="SitePages.aspx"><i class="fa fa-folder-open-o fa-fw"></i> Site Pages</a>
+                        </li>
+
+                        <li>
+                            <a href="Settings.aspx"><i class="fa fa-cog fa-fw"></i> Settings</a>
+                        </li>
                     </ul>
 
                 </div> <!-- /.sidebar-collapse -->

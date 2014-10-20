@@ -155,6 +155,8 @@
     <Content Include="Account\RegisterExternalLogin.aspx" />
     <Content Include="Account\ResetPassword.aspx" />
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
+    <Content Include="Administration\Cars.aspx" />
+    <Content Include="Administration\CarServices.aspx" />
     <Content Include="Administration\content\css\bootstrap.min.css" />
     <Content Include="Administration\content\css\metisMenu.min.css" />
     <Content Include="Administration\content\css\sb-admin-2.css" />
@@ -167,7 +169,9 @@
     <Content Include="Administration\content\js\plugins\metisMenu\metisMenu.min.js" />
     <Content Include="Administration\content\js\sb-admin-2.js" />
     <Content Include="Administration\Default.aspx" />
-    <Content Include="Administration\Login.aspx" />
+    <Content Include="Administration\Settings.aspx" />
+    <Content Include="Administration\SitePages.aspx" />
+    <Content Include="Administration\Users.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\img\favicon.ico" />
@@ -302,6 +306,20 @@
     <Compile Include="Administration\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
+    <Compile Include="Administration\Cars.aspx.cs">
+      <DependentUpon>Cars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Cars.aspx.designer.cs">
+      <DependentUpon>Cars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\CarServices.aspx.cs">
+      <DependentUpon>CarServices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\CarServices.aspx.designer.cs">
+      <DependentUpon>CarServices.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Administration\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -309,12 +327,26 @@
     <Compile Include="Administration\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administration\Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Administration\Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Administration\Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Administration\Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\SitePages.aspx.cs">
+      <DependentUpon>SitePages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\SitePages.aspx.designer.cs">
+      <DependentUpon>SitePages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\IdentityHelper.cs" />
