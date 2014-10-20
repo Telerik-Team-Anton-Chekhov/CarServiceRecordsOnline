@@ -155,6 +155,19 @@
     <Content Include="Account\RegisterExternalLogin.aspx" />
     <Content Include="Account\ResetPassword.aspx" />
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
+    <Content Include="Administration\content\css\bootstrap.min.css" />
+    <Content Include="Administration\content\css\metisMenu.min.css" />
+    <Content Include="Administration\content\css\sb-admin-2.css" />
+    <Content Include="Administration\content\font-awesome-4.1.0\css\font-awesome.css" />
+    <Content Include="Administration\content\font-awesome-4.1.0\css\font-awesome.min.css" />
+    <Content Include="Administration\content\font-awesome-4.1.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Administration\content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Administration\content\js\bootstrap.min.js" />
+    <Content Include="Administration\content\js\jquery-1.11.0.js" />
+    <Content Include="Administration\content\js\plugins\metisMenu\metisMenu.min.js" />
+    <Content Include="Administration\content\js\sb-admin-2.js" />
+    <Content Include="Administration\Default.aspx" />
+    <Content Include="Administration\Login.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\img\favicon.ico" />
@@ -168,7 +181,42 @@
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
+    <Content Include="Unauthorized.aspx" />
     <Content Include="Web.config" />
+    <Content Include="Administration\Admin.Master" />
+    <Content Include="Administration\content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Administration\content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Administration\content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Administration\content\font-awesome-4.1.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Administration\content\font-awesome-4.1.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Administration\content\font-awesome-4.1.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Administration\content\font-awesome-4.1.0\fonts\FontAwesome.otf" />
+    <Content Include="Administration\content\font-awesome-4.1.0\less\bordered-pulled.less" />
+    <Content Include="Administration\content\font-awesome-4.1.0\less\core.less" />
+    <Content Include="Administration\content\font-awesome-4.1.0\less\fixed-width.less" />
+    <Content Include="Administration\content\font-awesome-4.1.0\less\font-awesome.less" />
+    <Content Include="Administration\content\font-awesome-4.1.0\less\icons.less" />
+    <Content Include="Administration\content\font-awesome-4.1.0\less\larger.less" />
+    <Content Include="Administration\content\font-awesome-4.1.0\less\list.less" />
+    <Content Include="Administration\content\font-awesome-4.1.0\less\mixins.less" />
+    <Content Include="Administration\content\font-awesome-4.1.0\less\path.less" />
+    <Content Include="Administration\content\font-awesome-4.1.0\less\rotated-flipped.less" />
+    <Content Include="Administration\content\font-awesome-4.1.0\less\spinning.less" />
+    <Content Include="Administration\content\font-awesome-4.1.0\less\stacked.less" />
+    <Content Include="Administration\content\font-awesome-4.1.0\less\variables.less" />
+    <Content Include="Administration\content\font-awesome-4.1.0\scss\font-awesome.scss" />
+    <Content Include="Administration\content\font-awesome-4.1.0\scss\_bordered-pulled.scss" />
+    <Content Include="Administration\content\font-awesome-4.1.0\scss\_core.scss" />
+    <Content Include="Administration\content\font-awesome-4.1.0\scss\_fixed-width.scss" />
+    <Content Include="Administration\content\font-awesome-4.1.0\scss\_icons.scss" />
+    <Content Include="Administration\content\font-awesome-4.1.0\scss\_larger.scss" />
+    <Content Include="Administration\content\font-awesome-4.1.0\scss\_list.scss" />
+    <Content Include="Administration\content\font-awesome-4.1.0\scss\_mixins.scss" />
+    <Content Include="Administration\content\font-awesome-4.1.0\scss\_path.scss" />
+    <Content Include="Administration\content\font-awesome-4.1.0\scss\_rotated-flipped.scss" />
+    <Content Include="Administration\content\font-awesome-4.1.0\scss\_spinning.scss" />
+    <Content Include="Administration\content\font-awesome-4.1.0\scss\_stacked.scss" />
+    <Content Include="Administration\content\font-awesome-4.1.0\scss\_variables.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -247,6 +295,27 @@
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Administration\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\IdentityHelper.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -277,10 +346,15 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="Unauthorized.aspx.cs">
+      <DependentUpon>Unauthorized.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Unauthorized.aspx.designer.cs">
+      <DependentUpon>Unauthorized.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Administration\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\CarServiceRecords.Common\CarServiceRecords.Common.csproj">
       <Project>{9eedbd01-52fa-40b4-9fd5-a3736880ae9e}</Project>

@@ -15,6 +15,8 @@
 
         public string Name { get; set; }
 
+        public string ImageName { get; set; }
+
         public virtual User Owner { get; set; }
 
         public virtual Town Town { get; set; }
