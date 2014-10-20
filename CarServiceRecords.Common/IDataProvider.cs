@@ -6,7 +6,19 @@
     {
         IRepository<User> Users { get; }
 
-        //// Other Repos Here
+        IRepository<Car> Cars { get; }
+
+        IRepository<CarMake> CarMakes { get; }
+
+        IRepository<CarModel> CarModels { get; }
+
+        IRepository<CarService> CarServices { get; }
+
+        IRepository<RepairJob> RepairJobs { get; }
+
+        IRepository<SitePage> SitePages { get; }
+
+        IRepository<Town> Town { get; }
 
         int SaveChanges();
     }

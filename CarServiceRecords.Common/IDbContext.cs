@@ -7,7 +7,19 @@
 
     public interface IDbContext
     {
-        //// IDbSets here
+        IDbSet<Car> Cars { get; set; }
+
+        IDbSet<CarMake> CarMakes { get; set; }
+
+        IDbSet<CarModel> CarModels { get; set; }
+
+        IDbSet<CarService> CarServices { get; set; }
+
+        IDbSet<RepairJob> RepairJobs { get; set; }
+
+        IDbSet<SitePage> SitePages { get; set; }
+
+        IDbSet<Town> Towns { get; set; }
 
         int SaveChanges();
 

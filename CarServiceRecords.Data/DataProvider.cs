@@ -19,10 +19,42 @@
 
         public IRepository<User> Users
         {
-            get
-            {
-                return this.GetRepository<User>();
-            }
+            get { return this.GetRepository<User>(); }
+        }
+
+        public IRepository<Car> Cars
+        {
+            get { return this.GetRepository<Car>(); }
+        }
+
+        public IRepository<CarMake> CarMakes
+        {
+            get { return this.GetRepository<CarMake>(); }
+        }
+
+        public IRepository<CarModel> CarModels
+        {
+            get { return this.GetRepository<CarModel>(); }
+        }
+
+        public IRepository<CarService> CarServices
+        {
+            get { return this.GetRepository<CarService>(); }
+        }
+
+        public IRepository<RepairJob> RepairJobs
+        {
+            get { return this.GetRepository<RepairJob>(); }
+        }
+
+        public IRepository<SitePage> SitePages
+        {
+            get { return this.GetRepository<SitePage>(); }
+        }
+
+        public IRepository<Town> Town
+        {
+            get { return this.GetRepository<Town>(); }
         }
 
         public int SaveChanges()

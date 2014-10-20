@@ -1,13 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CarServiceRecords.Models
+﻿namespace CarServiceRecords.Models
 {
+    using System.Collections.Generic;
+
     public class CarMake
     {
+        private ICollection<CarModel> models;
 
+        public CarMake()
+        {
+            this.models = new HashSet<CarModel>();
+        }
+
+        public int Id { get; set; }
+
+        public string Name { get; set; }
+
+        public virtual ICollection<CarModel> Models 
+        { 
+            get
+            {
+                return this.models;
+            }
+
+            set
+            {
+                this.models = value;
+            }
+        }
     }
 }
