@@ -80,6 +80,7 @@
     <Compile Include="Enumerations\CarType.cs" />
     <Compile Include="Enumerations\EngineType.cs" />
     <Compile Include="Enumerations\GearType.cs" />
+    <Compile Include="ServiceComments.cs" />
     <Compile Include="SitePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepairJob.cs" />

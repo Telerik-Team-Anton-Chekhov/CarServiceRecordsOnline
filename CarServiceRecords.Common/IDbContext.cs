@@ -21,6 +21,8 @@
 
         IDbSet<Town> Towns { get; set; }
 
+        IDbSet<ServiceComments> ServiceComments { get; set; }
+
         int SaveChanges();
 
         IDbSet<TEntity> Set<TEntity>() where TEntity : class;

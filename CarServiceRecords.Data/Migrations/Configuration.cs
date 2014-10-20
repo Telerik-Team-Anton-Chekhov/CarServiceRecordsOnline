@@ -12,7 +12,6 @@ namespace CarServiceRecords.Data.Migrations
 
         protected override void Seed(CarServiceRecords.Data.CarServiceRecordsDbContext context)
         {
-            // Seed data here
         }
     }
 }

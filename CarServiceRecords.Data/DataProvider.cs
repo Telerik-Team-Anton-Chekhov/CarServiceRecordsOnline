@@ -57,6 +57,11 @@
             get { return this.GetRepository<Town>(); }
         }
 
+        public IRepository<ServiceComments> ServiceComments
+        {
+            get { return this.GetRepository<ServiceComments>(); }
+        }
+
         public int SaveChanges()
         {
             return this.databaseContext.SaveChanges();

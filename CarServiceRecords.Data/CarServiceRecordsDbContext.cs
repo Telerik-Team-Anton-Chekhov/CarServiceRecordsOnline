@@ -30,6 +30,8 @@
 
         public virtual IDbSet<Town> Towns { get; set; }
 
+        public virtual IDbSet<ServiceComments> ServiceComments { get; set; }
+
         public static CarServiceRecordsDbContext Create()
         {
             return new CarServiceRecordsDbContext();

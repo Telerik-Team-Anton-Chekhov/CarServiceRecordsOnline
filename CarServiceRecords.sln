@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarServiceRecords.Models", "CarServiceRecords.Models\CarServiceRecords.Models.csproj", "{306F7B81-85BD-4AB3-BF27-E06BC6EC16E1}"
 EndProject
@@ -12,6 +12,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeFirst", "CodeFirst", "{C4026A9C-C686-4CFE-978B-19F59204F2C7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarServiceRecords.Application", "CarServiceRecords.Application\CarServiceRecords.Application.csproj", "{66999B63-AD2B-4CE0-9394-6E13BB23486E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TODO", "TODO", "{1844C040-E12A-4C59-8865-7BCE7AA14A7E}"
+	ProjectSection(SolutionItems) = preProject
+		TODO-List.txt = TODO-List.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,8 +45,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{306F7B81-85BD-4AB3-BF27-E06BC6EC16E1} = {C4026A9C-C686-4CFE-978B-19F59204F2C7}
 		{6BC05CE9-108B-4082-ADDA-90605D72753A} = {C4026A9C-C686-4CFE-978B-19F59204F2C7}
 		{9EEDBD01-52FA-40B4-9FD5-A3736880AE9E} = {C4026A9C-C686-4CFE-978B-19F59204F2C7}
+		{306F7B81-85BD-4AB3-BF27-E06BC6EC16E1} = {C4026A9C-C686-4CFE-978B-19F59204F2C7}
 	EndGlobalSection
 EndGlobal

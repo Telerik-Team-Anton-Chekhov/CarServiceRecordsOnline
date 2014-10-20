@@ -20,6 +20,8 @@
 
         IRepository<Town> Town { get; }
 
+        IRepository<ServiceComments> ServiceComments { get; }
+
         int SaveChanges();
     }
 }
