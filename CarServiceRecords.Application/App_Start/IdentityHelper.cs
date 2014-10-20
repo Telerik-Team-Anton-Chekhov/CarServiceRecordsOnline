@@ -1,11 +1,13 @@
-﻿using CarServiceRecords.Models;
-using Microsoft.AspNet.Identity;
-using Microsoft.Owin.Security;
-using System;
-using System.Web;
-
-namespace CarServiceRecords.Application
+﻿namespace CarServiceRecords.Application
 {
+    using System;
+    using System.Web;
+
+    using CarServiceRecords.Models;
+
+    using Microsoft.AspNet.Identity;
+    using Microsoft.Owin.Security;
+
     public static class IdentityHelper
     {
         // Used for XSRF when linking external logins

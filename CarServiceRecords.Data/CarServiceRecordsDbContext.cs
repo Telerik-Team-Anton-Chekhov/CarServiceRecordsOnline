@@ -3,11 +3,11 @@
     using System.Data.Entity;
 
     using CarServiceRecords.Common;
-    using CarServiceRecords.Data.Migrations;
     using CarServiceRecords.Models;
-    
-    using Microsoft.AspNet.Identity.EntityFramework;
+    using CarServiceRecords.Data.Migrations;
 
+    using Microsoft.AspNet.Identity.EntityFramework;
+    
     public class CarServiceRecordsDbContext : IdentityDbContext<User>, IDbContext
     {
         public CarServiceRecordsDbContext()

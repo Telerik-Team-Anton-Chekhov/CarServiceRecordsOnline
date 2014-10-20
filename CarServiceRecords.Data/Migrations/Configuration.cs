@@ -1,11 +1,6 @@
 namespace CarServiceRecords.Data.Migrations
 {
-    using System;
-    using System.Data.Entity;
     using System.Data.Entity.Migrations;
-    using System.Linq;
-
-    using CarServiceRecords.Data;
 
     public sealed class Configuration : DbMigrationsConfiguration<CarServiceRecordsDbContext>
     {
@@ -15,9 +10,9 @@ namespace CarServiceRecords.Data.Migrations
             this.AutomaticMigrationDataLossAllowed = true;
         }
 
-        protected override void Seed(CarServiceRecordsDbContext context)
+        protected override void Seed(CarServiceRecords.Data.CarServiceRecordsDbContext context)
         {
-            // Seed information here
+            // Seed data here
         }
     }
 }
