@@ -1,14 +1,13 @@
-﻿using CarServiceRecords.Models;
-using Microsoft.AspNet.Identity.EntityFramework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CarServiceRecords.Data
+﻿namespace CarServiceRecords.Data
 {
-    public class ApplicationDbContext : IdentityDbContext<User>
+    using System.Data.Entity;
+
+    using CarServiceRecords.Common;
+    using CarServiceRecords.Models;
+
+    using Microsoft.AspNet.Identity.EntityFramework;
+
+    public class ApplicationDbContext : IdentityDbContext<User>, IDbContext
     {
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
@@ -18,6 +17,11 @@ namespace CarServiceRecords.Data
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
+        }
+
+        public new IDbSet<TEntity> Set<TEntity>() where TEntity : class
+        {
+            return base.Set<TEntity>();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Application.Data.Interfaces
+﻿namespace CarServiceRecords.Common
 {
     using System.Linq;
 

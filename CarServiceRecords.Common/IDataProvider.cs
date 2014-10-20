@@ -1,4 +1,4 @@
-﻿namespace Application.Data.Interfaces
+﻿namespace CarServiceRecords.Common
 {
     using CarServiceRecords.Models;
 
@@ -6,7 +6,7 @@
     {
         IRepository<User> Users { get; }
 
-        //Other Repos Here
+        //// Other Repos Here
 
         int SaveChanges();
     }

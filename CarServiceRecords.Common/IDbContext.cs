@@ -1,4 +1,4 @@
-﻿namespace Application.Data.Interfaces
+﻿namespace CarServiceRecords.Common
 {
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
@@ -7,7 +7,7 @@
 
     public interface IDbContext
     {
-        //IDbSets here
+        //// IDbSets here
 
         int SaveChanges();
 
