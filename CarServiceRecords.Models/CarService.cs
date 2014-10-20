@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CarServiceRecords.Models
 {
-    public class Dealer
+    public class CarService
     {
     }
 }
