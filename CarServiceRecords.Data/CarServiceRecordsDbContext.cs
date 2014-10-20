@@ -3,20 +3,22 @@
     using System.Data.Entity;
 
     using CarServiceRecords.Common;
+    using CarServiceRecords.Data.Migrations;
     using CarServiceRecords.Models;
-
+    
     using Microsoft.AspNet.Identity.EntityFramework;
 
-    public class ApplicationDbContext : IdentityDbContext<User>, IDbContext
+    public class CarServiceRecordsDbContext : IdentityDbContext<User>, IDbContext
     {
-        public ApplicationDbContext()
+        public CarServiceRecordsDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<CarServiceRecordsDbContext, Configuration>());
         }
 
-        public static ApplicationDbContext Create()
+        public static CarServiceRecordsDbContext Create()
         {
-            return new ApplicationDbContext();
+            return new CarServiceRecordsDbContext();
         }
 
         public new IDbSet<TEntity> Set<TEntity>() where TEntity : class
