@@ -23,7 +23,7 @@ namespace CarServiceRecords.Application.Administration.Users
             if (!Page.IsPostBack)
             {
                 this.ItemsList.DataSource = data.Users.All().ToList();
-                this.ItemsList.DataBind();
+                this.DataBind();
             }
         }
 
