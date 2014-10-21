@@ -16,6 +16,7 @@
         {
             data = new DataProvider();
         }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             this.itemId = Convert.ToInt32(Request.Params["itemId"]);

@@ -35,9 +35,7 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                       <%--<li><a runat="server" href="~/">Home</a></li>--%>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
@@ -60,15 +58,23 @@
         </div>
 
         <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
+            <div class="row">
+                <div class="col-md-12">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
         </div>
 
-        <div class="container">
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Car Service Records</p>
-            </footer>
+        <div id="footer">
+            <div class="container">
+                <hr />
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="text-muted text-center">Made By <a href="https://github.com/Telerik-Team-Anton-Chekhov/CarServiceRecordsOnline">Team Anton Chekhov</a> | Powered By <a href="http://www.asp.net/web-forms">ASP.NET Web Forms</a> </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </form>
