@@ -11,6 +11,12 @@
         private IDbContext databaseContext;
         private IDictionary<Type, object> createdRepositories;
 
+        // Poor man's dependency injection
+        public DataProvider()
+            : this(new CarServiceRecordsDbContext())
+        {
+        }
+
         public DataProvider(IDbContext context)
         {
             this.databaseContext = context;

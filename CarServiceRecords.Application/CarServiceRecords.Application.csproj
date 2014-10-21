@@ -170,7 +170,8 @@
     <Content Include="Administration\content\js\sb-admin-2.js" />
     <Content Include="Administration\Default.aspx" />
     <Content Include="Administration\Settings.aspx" />
-    <Content Include="Administration\SitePages.aspx" />
+    <Content Include="Administration\SitePages\AddEdit.aspx" />
+    <Content Include="Administration\SitePages\List.aspx" />
     <Content Include="Administration\Users.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\css\bootstrap.min.css" />
@@ -334,12 +335,19 @@
     <Compile Include="Administration\Settings.aspx.designer.cs">
       <DependentUpon>Settings.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administration\SitePages.aspx.cs">
-      <DependentUpon>SitePages.aspx</DependentUpon>
+    <Compile Include="Administration\SitePages\AddEdit.aspx.cs">
+      <DependentUpon>AddEdit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Administration\SitePages.aspx.designer.cs">
-      <DependentUpon>SitePages.aspx</DependentUpon>
+    <Compile Include="Administration\SitePages\AddEdit.aspx.designer.cs">
+      <DependentUpon>AddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\SitePages\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\SitePages\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administration\Users.aspx.cs">
       <DependentUpon>Users.aspx</DependentUpon>

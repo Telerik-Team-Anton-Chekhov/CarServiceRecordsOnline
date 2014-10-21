@@ -13,10 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Car Service Records - Admin Panel</title>
-    <link href="content/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="content/css/metisMenu.min.css" rel="stylesheet" />
-    <link href="content/css/sb-admin-2.css" rel="stylesheet" />
-    <link href="content/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/administration/content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/administration/content/css/metisMenu.min.css" rel="stylesheet" />
+    <link href="/administration/content/css/sb-admin-2.css" rel="stylesheet" />
+    <link href="/administration/content/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -54,7 +54,7 @@
                         </li>
 
                         <li>
-                            <a href="SitePages.aspx"><i class="fa fa-folder-open-o fa-fw"></i> Pages</a>
+                            <a href="/administration/SitePages/List.aspx"><i class="fa fa-folder-open-o fa-fw"></i> Pages</a>
                         </li>
 
                         <li>
@@ -69,24 +69,23 @@
         <!-- Page Content -->
         <div id="page-wrapper">
             <div class="row">
-                <form id="AdminForm" runat="server">
-                    <div>
+                <div class="col-md-12">
+                    <form id="AdminForm" runat="server">
                         <asp:ContentPlaceHolder ID="AdminContent" runat="server">
         
                         </asp:ContentPlaceHolder>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div> <!-- /.row -->
         </div>  <!-- /#page-wrapper -->
 
     </div> <!-- /#wrapper -->
 
-    <script src="content/js/jquery-1.11.0.js"></script>
-    <script src="content/js/bootstrap.min.js"></script>
-    <script src="content/js/plugins/metisMenu/metisMenu.min.js"></script>
-    <script src="content/js/sb-admin-2.js"></script>
+    <script src="/administration/content/js/jquery-1.11.0.js"></script>
+    <script src="/administration/content/js/bootstrap.min.js"></script>
+    <script src="/administration/content/js/plugins/metisMenu/metisMenu.min.js"></script>
+    <script src="/administration/content/js/sb-admin-2.js"></script>
 
 </body>
-
 </html>
 
