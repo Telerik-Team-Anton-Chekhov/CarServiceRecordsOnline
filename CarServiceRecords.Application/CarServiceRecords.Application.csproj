@@ -168,6 +168,8 @@
     <Content Include="Administration\Default.aspx" />
     <Content Include="Administration\SitePages\AddEdit.aspx" />
     <Content Include="Administration\SitePages\List.aspx" />
+    <Content Include="Administration\Users\AddEdit.aspx" />
+    <Content Include="Administration\Users\List.aspx" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\img\favicon.ico" />
     <Content Include="Content\css\site.css" />
@@ -318,6 +320,20 @@
     <Compile Include="Administration\SitePages\List.aspx.designer.cs">
       <DependentUpon>List.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Administration\Users\AddEdit.aspx.cs">
+      <DependentUpon>AddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Users\AddEdit.aspx.designer.cs">
+      <DependentUpon>AddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Users\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Users\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\IdentityHelper.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -356,7 +372,11 @@
       <DependentUpon>Unauthorized.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Administration\CarServices\" />
+    <Folder Include="Administration\Cars\" />
+    <Folder Include="Administration\Settings\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CarServiceRecords.Common\CarServiceRecords.Common.csproj">
       <Project>{9eedbd01-52fa-40b4-9fd5-a3736880ae9e}</Project>
