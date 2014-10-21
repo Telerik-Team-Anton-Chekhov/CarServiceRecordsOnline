@@ -14,7 +14,14 @@ namespace CarServiceRecords.Application.Account
         {
             var manager = Context.GetOwinContext().GetUserManager<ApplicationUserManager>();
             var user = new User() { UserName = Email.Text, Email = Email.Text };
+
             IdentityResult result = manager.Create(user, Password.Text);
+
+            if (this.isCarService.Checked)
+            {
+                manager.AddToRole(user.Id, "ServiceOwner");
+            }
+
             if (result.Succeeded)
             {
                 IdentityHelper.SignIn(manager, user, isPersistent: false);
