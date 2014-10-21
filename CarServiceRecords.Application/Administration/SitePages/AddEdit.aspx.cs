@@ -5,6 +5,7 @@
     using CarServiceRecords.Common;
     using CarServiceRecords.Data;
     using CarServiceRecords.Models;
+    using ErrorHandlerControl;
     
     public partial class AddEdit : System.Web.UI.Page
     {
@@ -44,8 +45,16 @@
                 item.Content = this.content.Text;
                 item.IsVisible = this.isVisibleSelect.SelectedValue == "0" ? false : true;
 
-                data.SaveChanges();
-                Response.Redirect("List.aspx");
+                try
+                {
+                    data.SaveChanges();
+                    Response.Redirect("List.aspx", false);
+                }
+                catch (Exception ex)
+                {
+                    ErrorSuccessNotifier.AddErrorMessage(ex);
+                }
+                
             }
         }
 

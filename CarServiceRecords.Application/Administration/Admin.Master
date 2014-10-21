@@ -4,6 +4,11 @@
     CodeBehind="Admin.master.cs" 
     Inherits="CarServiceRecords.Application.Administration.Admin" %>
 
+<%@ Register 
+    Src="~/Controls/ErrorSuccessNotifier/ErrorSuccessNotifier.ascx" 
+    TagPrefix="errorHandlerControl" 
+    TagName="ErrorSuccessNotifier" %>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -70,13 +75,14 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-md-12">
+                    <errorHandlerControl:ErrorSuccessNotifier runat="server" id="ErrorSuccessNotifier" />
                     <form id="AdminForm" runat="server">
                         <asp:ContentPlaceHolder ID="AdminContent" runat="server">
-        
                         </asp:ContentPlaceHolder>
                     </form>
                 </div>
             </div> <!-- /.row -->
+
         </div>  <!-- /#page-wrapper -->
 
     </div> <!-- /#wrapper -->
