@@ -47,15 +47,15 @@
                         </li>
 
                         <li>
-                            <a href="Users.aspx"><i class="fa fa-users fa-fw"></i> Users</a>
+                            <a href="/administration/Users/List.aspx"><i class="fa fa-users fa-fw"></i> Users</a>
                         </li>
 
                         <li>
-                            <a href="Cars.aspx"><i class="fa fa-car fa-fw"></i> Cars</a>
+                            <a href="/administration/Cars/List.aspx"><i class="fa fa-car fa-fw"></i> Cars</a>
                         </li>
 
                         <li>
-                            <a href="CarServices.aspx"><i class="fa fa-wrench fa-fw"></i> Car Services</a>
+                            <a href="/administration/CarServices/List.aspx"><i class="fa fa-wrench fa-fw"></i> Car Services</a>
                         </li>
 
                         <li>
@@ -63,7 +63,7 @@
                         </li>
 
                         <li>
-                            <a href="Settings.aspx"><i class="fa fa-cog fa-fw"></i> Settings</a>
+                            <a href="/administration/Settings/List.aspx/"><i class="fa fa-cog fa-fw"></i> Settings</a>
                         </li>
                     </ul>
 
