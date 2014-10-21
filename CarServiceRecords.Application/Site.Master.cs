@@ -1,4 +1,7 @@
-﻿using System;
+﻿using CarServiceRecords.Common;
+using CarServiceRecords.Data;
+using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Security.Principal;
@@ -14,9 +17,11 @@ namespace CarServiceRecords.Application
         private const string AntiXsrfTokenKey = "__AntiXsrfToken";
         private const string AntiXsrfUserNameKey = "__AntiXsrfUserName";
         private string _antiXsrfTokenValue;
+        private IDataProvider Data;
 
         protected void Page_Init(object sender, EventArgs e)
         {
+            this.Data = new DataProvider();
             // The code below helps to protect against XSRF attacks
             var requestCookie = Request.Cookies[AntiXsrfTokenKey];
             Guid requestCookieGuidValue;
@@ -54,6 +59,8 @@ namespace CarServiceRecords.Application
                 // Set Anti-XSRF token
                 ViewState[AntiXsrfTokenKey] = Page.ViewStateUserKey;
                 ViewState[AntiXsrfUserNameKey] = Context.User.Identity.Name ?? String.Empty;
+                this.PagesList.DataSource = this.Data.SitePages.All().Where(x => x.IsVisible == true).ToList();
+                this.PagesList.DataBind();
             }
             else
             {

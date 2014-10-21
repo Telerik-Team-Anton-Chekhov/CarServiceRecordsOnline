@@ -73,6 +73,16 @@
                     <div class="col-md-6">
                         <p class="text-muted text-center">Made By <a href="https://github.com/Telerik-Team-Anton-Chekhov/CarServiceRecordsOnline">Team Anton Chekhov</a> | Powered By <a href="http://www.asp.net/web-forms">ASP.NET Web Forms</a> </p>
                     </div>
+                    <div class="col-md-6">
+                        <asp:Repeater 
+                            ID="PagesList" 
+                            runat="server" 
+                            ItemType="CarServiceRecords.Models.SitePage">
+                            <ItemTemplate>
+                                <a href="ShowPage.aspx?pageId=<%#: Item.Id %>"><%#: Item.Title %></a> | 
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </div>
                 </div>
             </div>
         </div>
