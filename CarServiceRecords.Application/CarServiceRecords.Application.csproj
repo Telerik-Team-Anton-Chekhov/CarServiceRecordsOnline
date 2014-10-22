@@ -154,6 +154,9 @@
     <Content Include="Account\RegisterExternalLogin.aspx" />
     <Content Include="Account\ResetPassword.aspx" />
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
+    <Content Include="Administration\Cars\AddEdit.aspx" />
+    <Content Include="Administration\Cars\JobDetails.aspx" />
+    <Content Include="Administration\Cars\List.aspx" />
     <Content Include="Administration\content\css\bootstrap.min.css" />
     <Content Include="Administration\content\css\metisMenu.min.css" />
     <Content Include="Administration\content\css\sb-admin-2.css" />
@@ -302,6 +305,27 @@
     <Compile Include="Administration\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
+    <Compile Include="Administration\Cars\AddEdit.aspx.cs">
+      <DependentUpon>AddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Cars\AddEdit.aspx.designer.cs">
+      <DependentUpon>AddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Cars\JobDetails.aspx.cs">
+      <DependentUpon>JobDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Cars\JobDetails.aspx.designer.cs">
+      <DependentUpon>JobDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Cars\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Cars\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Administration\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -398,8 +422,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Administration\CarServices\" />
-    <Folder Include="Administration\Cars\" />
-    <Folder Include="Administration\Settings\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CarServiceRecords.Common\CarServiceRecords.Common.csproj">

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.Entity;
 
 namespace CarServiceRecords.Application.Administration.Users
 {
@@ -24,6 +25,7 @@ namespace CarServiceRecords.Application.Administration.Users
             {
                 this.ItemsList.DataSource = data.Users.All().ToList();
                 this.DataBind();
+                
             }
         }
 

@@ -64,10 +64,6 @@
                         <li>
                             <a href="/administration/SitePages/List.aspx"><i class="fa fa-folder-open-o fa-fw"></i> Pages</a>
                         </li>
-
-                        <li>
-                            <a href="/administration/Settings/List.aspx/"><i class="fa fa-cog fa-fw"></i> Settings</a>
-                        </li>
                     </ul>
 
                 </div> <!-- /.sidebar-collapse -->
