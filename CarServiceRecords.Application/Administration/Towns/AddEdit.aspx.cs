@@ -16,6 +16,7 @@ namespace CarServiceRecords.Application.Administration.Towns
         private bool isNewItem = false;
         private int itemId;
         private IDataProvider data;
+
         protected void Page_Init(object sender, EventArgs e)
         {
             data = new DataProvider();
@@ -54,6 +55,16 @@ namespace CarServiceRecords.Application.Administration.Towns
                     ErrorSuccessNotifier.AddErrorMessage(ex);
                 }
 
+            }
+        }
+
+        protected void Page_PreRender(object sender, EventArgs e)
+        {
+            if (!isNewItem)
+            {
+                Town item = data.Town.Find(itemId);
+
+                this.name.Text = item.Name;
             }
         }
 

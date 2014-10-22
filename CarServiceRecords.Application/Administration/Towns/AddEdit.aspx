@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Administration/Admin.Master" AutoEventWireup="true" CodeBehind="AddEdit.aspx.cs" Inherits="CarServiceRecords.Application.Administration.Towns.AddEdit1" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="AdminContent" runat="server">
     <div class="col-md-6">
         <h3>Manage Town</h3>
