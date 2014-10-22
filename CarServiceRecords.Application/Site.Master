@@ -42,6 +42,11 @@
                                         <li><a runat="server" href="/Administration">Admin Panel</a></li>
                                     </ContentTemplate>
                                 </asp:RoleGroup>
+                                <asp:RoleGroup Roles="ServiceOwner">
+                                    <ContentTemplate>
+                                        <li><a runat="server" href="#">Manage My Service</a></li>
+                                    </ContentTemplate>
+                                </asp:RoleGroup>
                             </RoleGroups>
                         </asp:LoginView>
                        <%--<li><a runat="server" href="~/">Home</a></li>--%>
