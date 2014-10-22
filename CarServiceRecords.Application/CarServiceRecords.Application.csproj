@@ -156,6 +156,8 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Administration\CarMakes\AddEdit.aspx" />
     <Content Include="Administration\CarMakes\List.aspx" />
+    <Content Include="Administration\CarModels\AddEdit.aspx" />
+    <Content Include="Administration\CarModels\List.aspx" />
     <Content Include="Administration\Cars\AddEdit.aspx" />
     <Content Include="Administration\Cars\JobDetails.aspx" />
     <Content Include="Administration\Cars\List.aspx" />
@@ -319,6 +321,20 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Administration\CarMakes\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\CarModels\AddEdit.aspx.cs">
+      <DependentUpon>AddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\CarModels\AddEdit.aspx.designer.cs">
+      <DependentUpon>AddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\CarModels\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\CarModels\List.aspx.designer.cs">
       <DependentUpon>List.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administration\Cars\AddEdit.aspx.cs">
