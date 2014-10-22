@@ -53,6 +53,25 @@ namespace CarServiceRecords.Data.Migrations
                 manager.Create(user, "123456");
                 manager.AddToRole(user.Id, "ServiceOwner");
             }
+
+            var mercedes = new CarMake();
+            mercedes.Name = "Mercedes";
+
+            var opel = new CarMake();
+            opel.Name = "Opel";
+
+            var mercedesModel = new CarModel();
+            mercedesModel.Name = "C200";
+            mercedesModel.Make = mercedes;
+
+            var opelModel = new CarModel();
+            opelModel.Name = "Corsa";
+            opelModel.Make = opel;
+
+            context.CarModels.Add(mercedesModel);
+            context.CarModels.Add(opelModel);
+
+            context.SaveChanges();
         }
     }
 }
