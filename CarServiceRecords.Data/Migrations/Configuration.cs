@@ -55,21 +55,25 @@ namespace CarServiceRecords.Data.Migrations
             }
 
             var mercedes = new CarMake();
+            mercedes.Id = 1;
             mercedes.Name = "Mercedes";
 
             var opel = new CarMake();
+            opel.Id = 2;
             opel.Name = "Opel";
 
             var mercedesModel = new CarModel();
+            mercedesModel.Id = 1;
             mercedesModel.Name = "C200";
             mercedesModel.Make = mercedes;
 
             var opelModel = new CarModel();
+            opelModel.Id = 1;
             opelModel.Name = "Corsa";
             opelModel.Make = opel;
 
-            context.CarModels.Add(mercedesModel);
-            context.CarModels.Add(opelModel);
+            context.CarModels.AddOrUpdate(mercedesModel);
+            context.CarModels.AddOrUpdate(opelModel);
 
             context.SaveChanges();
         }

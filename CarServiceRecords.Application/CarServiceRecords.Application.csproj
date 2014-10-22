@@ -154,6 +154,8 @@
     <Content Include="Account\RegisterExternalLogin.aspx" />
     <Content Include="Account\ResetPassword.aspx" />
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
+    <Content Include="Administration\CarMakes\AddEdit.aspx" />
+    <Content Include="Administration\CarMakes\List.aspx" />
     <Content Include="Administration\Cars\AddEdit.aspx" />
     <Content Include="Administration\Cars\JobDetails.aspx" />
     <Content Include="Administration\Cars\List.aspx" />
@@ -304,6 +306,20 @@
     </Compile>
     <Compile Include="Administration\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\CarMakes\AddEdit.aspx.cs">
+      <DependentUpon>AddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\CarMakes\AddEdit.aspx.designer.cs">
+      <DependentUpon>AddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\CarMakes\List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\CarMakes\List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
     </Compile>
     <Compile Include="Administration\Cars\AddEdit.aspx.cs">
       <DependentUpon>AddEdit.aspx</DependentUpon>

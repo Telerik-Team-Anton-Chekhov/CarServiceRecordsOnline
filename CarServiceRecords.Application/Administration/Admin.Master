@@ -57,8 +57,13 @@
                         <li>
                             <a href="/administration/CarServices/List.aspx"><i class="fa fa-wrench fa-fw"></i> Car Services</a>
                         </li>
-                         <li>
+
+                        <li>
                             <a href="/administration/Towns/List.aspx"><i class="fa fa-university fa-fw"></i> Towns</a>
+                        </li>
+
+                        <li>
+                            <a href="/administration/CarMakes/List.aspx"><i class="fa fa-cogs fa-fw"></i> Car Makes</a>
                         </li>
 
                         <li>
