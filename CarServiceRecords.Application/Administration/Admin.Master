@@ -57,6 +57,9 @@
                         <li>
                             <a href="/administration/CarServices/List.aspx"><i class="fa fa-wrench fa-fw"></i> Car Services</a>
                         </li>
+                         <li>
+                            <a href="/administration/Towns/List.aspx"><i class="fa fa-university fa-fw"></i> Towns</a>
+                        </li>
 
                         <li>
                             <a href="/administration/SitePages/List.aspx"><i class="fa fa-folder-open-o fa-fw"></i> Pages</a>
