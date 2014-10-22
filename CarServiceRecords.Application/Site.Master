@@ -35,6 +35,15 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
+                        <asp:LoginView runat="server" ViewStateMode="Disabled">
+                            <RoleGroups>
+                                <asp:RoleGroup Roles="Administrator">
+                                    <ContentTemplate>
+                                        <li><a runat="server" href="/Administration">Admin Panel</a></li>
+                                    </ContentTemplate>
+                                </asp:RoleGroup>
+                            </RoleGroups>
+                        </asp:LoginView>
                        <%--<li><a runat="server" href="~/">Home</a></li>--%>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
