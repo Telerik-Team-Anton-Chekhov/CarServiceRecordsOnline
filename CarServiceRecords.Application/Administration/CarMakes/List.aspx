@@ -69,13 +69,13 @@
                 <%#: Item.Models.Count %>
             </td>
             <td>
-                <a class="btn btn-primary" href="AddEdit.aspx?itemId=<%#: Item.Id %>">Edit</a>
+                <a class="btn btn-primary btn-sm" href="AddEdit.aspx?itemId=<%#: Item.Id %>">Edit</a>
             </td>
             <td>
                 <asp:LinkButton 
                     ID="deleteItem" 
                     runat="server" 
-                    class="btn btn-danger"
+                    class="btn btn-danger btn-sm"
                     CommandName="Delete"
                     OnCommand="Delete_Item"
                     CommandArgument="<%# Item.Id %>"
