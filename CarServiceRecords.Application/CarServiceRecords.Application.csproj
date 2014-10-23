@@ -502,6 +502,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Administration\CarServices\" />
+    <Folder Include="Uploads\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CarServiceRecords.Common\CarServiceRecords.Common.csproj">

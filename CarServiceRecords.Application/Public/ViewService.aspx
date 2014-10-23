@@ -13,6 +13,17 @@
         ItemType="CarServiceRecords.Models.CarService">
 
         <ItemTemplate>
+            <div class="col-lg-3">
+                
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                       Logo
+                    </div>
+                    <div class="panel-body">
+                        <img class="img-responsive" src="/Uploads/<%#: Item.ImageName %>" />
+                    </div>
+                </div>
+            </div>
             <div class="col-lg-6">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
@@ -31,7 +42,7 @@
 
             <div class="row">
                 <asp:PlaceHolder runat="server" ID="ServiceItem"></asp:PlaceHolder>
-                <div class="col-md-6">
+                <div class="col-md-3">
                     <a href="AddJob.aspx" class="btn btn-primary" role="button">Add Repair Job</a>
                 </div>
             </div>

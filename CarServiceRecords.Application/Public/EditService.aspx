@@ -57,6 +57,14 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="Phone" class="col-lg-2 control-label">Logo</label>
+                            <div class="col-lg-10">
+                                <asp:FileUpload ID="LogoUpload" runat="server" />
+                            </div>
+                        </div>
+
+                        
+                        <div class="form-group">
                             <div class="col-lg-10 col-lg-offset-2">
                                 <asp:Button ID="ButtonSubmit" runat="server" class="btn btn-primary" Text="Submit" OnClick="ButtonSubmit_Click" />
                             </div>

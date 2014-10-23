@@ -10,6 +10,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
+using System.IO;
 
 namespace CarServiceRecords.Application.Public
 {
@@ -67,6 +68,13 @@ namespace CarServiceRecords.Application.Public
                 item.Address = this.Address.Text;
                 item.Phone = this.Phone.Text;
                 item.Owner = data.Users.Find(currentUserId);
+
+                if (LogoUpload.HasFile)
+                {
+                    string filename = Path.GetFileName(LogoUpload.FileName);
+                    LogoUpload.SaveAs(Server.MapPath("~/Uploads/") + filename);
+                    item.ImageName = filename;
+                }
 
                 try
                 {
