@@ -77,7 +77,7 @@ namespace CarServiceRecords.Data.Migrations
             mercedesModel.Make = mercedes;
 
             var opelModel = new CarModel();
-            opelModel.Id = 1;
+            opelModel.Id = 2;
             opelModel.Name = "Corsa";
             opelModel.Make = opel;
 
