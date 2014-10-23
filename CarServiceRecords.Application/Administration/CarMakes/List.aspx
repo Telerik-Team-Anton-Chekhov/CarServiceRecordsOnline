@@ -7,14 +7,21 @@
         ID="ItemsList"
         ItemPlaceholderID="CarMakeItem"
         runat="server"
+        SelectMethod="GetItems"
         ItemType="CarServiceRecords.Models.CarMake">
 
         <LayoutTemplate>
             <table class="table table-striped table-bordered table-hover">
                 <tr runat="server">
-                    <th runat="server">Id</th>
-                    <th runat="server">Name</th>
-                    <th runat="server">Models Count</th>
+                    <th runat="server">
+                        <asp:LinkButton ID="byId" CommandArgument="id" CommandName="Sort" Text="Id" runat="server" />
+                    </th>
+                    <th runat="server">
+                        <asp:LinkButton ID="byName" CommandArgument="name" CommandName="Sort" Text="Name" runat="server" />
+                    </th>
+                    <th runat="server">
+                        Models Count
+                    </th>
                     <th runat="server">-</th>
                     <th runat="server">-</th>
                 </tr>
@@ -59,7 +66,7 @@
                 <%#: Item.Name %>
             </td>
             <td>
-                <%#: Item.Models.Count() %>
+                <%#: Item.Models.Count %>
             </td>
             <td>
                 <a class="btn btn-primary" href="AddEdit.aspx?itemId=<%#: Item.Id %>">Edit</a>

@@ -18,7 +18,7 @@
             <div class="col-lg-4">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <%#: Item.Model.Make.Name %> - <%#: Item.Model.Name %>
+                        <%#: Item.Model != null ? Item.Model.Make.Name : "None"%> - <%#: Item.Model != null ? Item.Model.Name : "None"%>
                     </div>
                     <div class="panel-body">
                         VIN: <p><%#: Item.VinNumber%></p>
