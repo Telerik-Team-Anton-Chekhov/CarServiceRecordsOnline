@@ -24,6 +24,7 @@ namespace CarServiceRecords.Application.Public
         {
             var currentUserId = User.Identity.GetUserId();
             this.CarList.DataSource = data.Cars.All().Where(s => s.Owner.Id == currentUserId).ToList();
+            this.RepairsList.DataSource = data.RepairJobs.All().ToList();
             this.DataBind();
         }
     }

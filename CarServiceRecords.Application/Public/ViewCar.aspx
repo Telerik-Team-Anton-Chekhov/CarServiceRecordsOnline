@@ -27,11 +27,32 @@
         </ItemTemplate>
 
         <LayoutTemplate>
+            <asp:PlaceHolder runat="server" ID="CarItem"></asp:PlaceHolder>
+        </LayoutTemplate>
+    </asp:ListView>
 
-            <div class="row">
-                <asp:PlaceHolder runat="server" ID="CarItem"></asp:PlaceHolder>
+    <asp:ListView 
+        ID="RepairsList" 
+        runat="server"
+        ItemPlaceholderID="RepairItem"
+        ItemType="CarServiceRecords.Models.RepairJob">
+
+        <ItemTemplate>
+            <div class="col-lg-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <%#: Item.CarService.Name%>
+                    </div>
+                    <div class="panel-body">
+                        <p>Description: <strong><%#: Item.Description%></strong></p>
+                        <p>Service: <strong><a href="ServiceDetails.aspx?serviceId=<%# Item.CarService.Id%>"><%#: Item.CarService.Name%></a></strong></p>
+                    </div>
+                </div>
             </div>
+        </ItemTemplate>
 
+        <LayoutTemplate>
+            <asp:PlaceHolder runat="server" ID="RepairItem"></asp:PlaceHolder>
         </LayoutTemplate>
     </asp:ListView>
 </asp:Content>
