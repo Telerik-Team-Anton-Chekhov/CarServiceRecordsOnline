@@ -193,6 +193,7 @@
     <Content Include="Account\Web.config" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Public\AddJob.aspx" />
     <Content Include="Public\EditCar.aspx" />
     <Content Include="Public\EditService.aspx" />
     <Content Include="Public\ViewCar.aspx" />
@@ -434,6 +435,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Public\AddJob.aspx.cs">
+      <DependentUpon>AddJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\AddJob.aspx.designer.cs">
+      <DependentUpon>AddJob.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Public\EditCar.aspx.cs">
       <DependentUpon>EditCar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

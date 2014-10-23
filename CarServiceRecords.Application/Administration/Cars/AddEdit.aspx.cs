@@ -96,9 +96,9 @@ namespace CarServiceRecords.Application.Administration.Cars
 
                 this.model.SelectedValue = item.Model.Id.ToString();
 
-                this.type.SelectedValue = item.Type.ToString();
-                this.engine.SelectedValue = item.Engine.ToString();
-                this.gear.SelectedValue = item.Gear.ToString();
+                this.type.SelectedValue = ((int)item.Type).ToString();
+                this.engine.SelectedValue = ((int)item.Engine).ToString();
+                this.gear.SelectedValue = ((int)item.Gear).ToString();
             }
         }
 

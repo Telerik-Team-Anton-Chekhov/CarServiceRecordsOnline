@@ -25,6 +25,8 @@
 
         public virtual GearType Gear { get; set; }
 
+        public virtual User Owner { get; set; }
+
         public virtual ICollection<RepairJob> RepairJobs
         {
             get
