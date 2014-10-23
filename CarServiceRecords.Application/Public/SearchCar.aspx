@@ -129,7 +129,7 @@
                         <%#: Item.Gear%>
                     </td>
                     <td>
-                        <a class="btn btn-primary btn-sm" href="CarDetails.aspx?itemId=<%#: Item.Id %>">Edit</a>
+                        <a class="btn btn-primary btn-sm" href="CarDetails.aspx?itemId=<%#: Item.Id %>">Details</a>
                     </td>
                     </tr>
                 </ItemTemplate>
