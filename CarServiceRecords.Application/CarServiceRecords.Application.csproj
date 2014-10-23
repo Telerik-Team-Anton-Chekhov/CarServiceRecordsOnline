@@ -194,8 +194,11 @@
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Public\AddJob.aspx" />
+    <Content Include="Public\CarDetails.aspx" />
     <Content Include="Public\EditCar.aspx" />
     <Content Include="Public\EditService.aspx" />
+    <Content Include="Public\SearchCar.aspx" />
+    <Content Include="Public\ServiceDetails.aspx" />
     <Content Include="Public\ViewCar.aspx" />
     <Content Include="Public\ViewService.aspx" />
     <Content Include="Search.aspx" />
@@ -442,6 +445,13 @@
     <Compile Include="Public\AddJob.aspx.designer.cs">
       <DependentUpon>AddJob.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Public\CarDetails.aspx.cs">
+      <DependentUpon>CarDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\CarDetails.aspx.designer.cs">
+      <DependentUpon>CarDetails.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Public\EditCar.aspx.cs">
       <DependentUpon>EditCar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -455,6 +465,20 @@
     </Compile>
     <Compile Include="Public\EditService.aspx.designer.cs">
       <DependentUpon>EditService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\SearchCar.aspx.cs">
+      <DependentUpon>SearchCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\SearchCar.aspx.designer.cs">
+      <DependentUpon>SearchCar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ServiceDetails.aspx.cs">
+      <DependentUpon>ServiceDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\ServiceDetails.aspx.designer.cs">
+      <DependentUpon>ServiceDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Public\ViewCar.aspx.cs">
       <DependentUpon>ViewCar.aspx</DependentUpon>
