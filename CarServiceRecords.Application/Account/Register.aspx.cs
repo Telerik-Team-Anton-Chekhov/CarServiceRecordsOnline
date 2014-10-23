@@ -21,6 +21,10 @@ namespace CarServiceRecords.Application.Account
             {
                 manager.AddToRole(user.Id, "ServiceOwner");
             }
+            else
+            {
+                manager.AddToRole(user.Id, "Default");
+            }
 
             if (result.Succeeded)
             {

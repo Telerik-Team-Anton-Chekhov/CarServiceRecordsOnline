@@ -41,12 +41,17 @@
                             <RoleGroups>
                                 <asp:RoleGroup Roles="Administrator">
                                     <ContentTemplate>
-                                        <li><a runat="server" href="/Administration">Admin Panel</a></li>
+                                        <li><a runat="server" href="~/Administration">Admin Panel</a></li>
                                     </ContentTemplate>
                                 </asp:RoleGroup>
                                 <asp:RoleGroup Roles="ServiceOwner">
                                     <ContentTemplate>
-                                        <li><a runat="server" href="#">Manage My Service</a></li>
+                                        <li><a runat="server" href="~/Public/ViewService.aspx">Manage My Service</a></li>
+                                    </ContentTemplate>
+                                </asp:RoleGroup>
+                                <asp:RoleGroup Roles="Default">
+                                    <ContentTemplate>
+                                        <li><a runat="server" href="~/Public/ViewCar.aspx">Manage My Car</a></li>
                                     </ContentTemplate>
                                 </asp:RoleGroup>
                             </RoleGroups>

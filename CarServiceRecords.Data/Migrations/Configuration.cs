@@ -34,6 +34,15 @@ namespace CarServiceRecords.Data.Migrations
                 manager.Create(role);
             }
 
+            if (!context.Roles.Any(r => r.Name == "Default"))
+            {
+                var store = new RoleStore<IdentityRole>(context);
+                var manager = new RoleManager<IdentityRole>(store);
+                var role = new IdentityRole { Name = "Default" };
+
+                manager.Create(role);
+            }
+
             if (!context.Users.Any(u => u.UserName == "admin@car.rec"))
             {
                 var store = new UserStore<User>(context);
