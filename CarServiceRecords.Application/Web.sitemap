@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Default.aspx" title="Home"  description="Home Page">
+    <siteMapNode url="~/Administration/Default.aspx" title="Administration"  description="Administration">
+      <siteMapNode url="~/Administration/Users/List.aspx" title="Users" description="User Control"/>
+      <siteMapNode url="~/Administration/Cars/List.aspx" title="Cars" description="Cars Control"/>
+      <siteMapNode url="~/Administration/CarServices/List.aspx" title="Car Services" description="Car Services"/>
+      <siteMapNode url="~/Administration/Towns/List.aspx" title="Towns" description="Towns Control"/>
+      <siteMapNode url="~/Administration/CarMakes/List.aspx" title="Car Makes" description="Car Makes"/>
+      <siteMapNode url="~/Administration/CarModels/List.aspx" title="Car Models" description="Car Models"/>
+      <siteMapNode url="~/Administration/SitePages/List.aspx" title="Site Pages" description="Site Pages"/>
+     </siteMapNode>
+    <siteMapNode url="" title="Owner" roles="ServiceOwner">
+      <siteMapNode url="~/Public/ViewService.aspx" title="Manage My Service" description="Manage My Service"/>
+      <siteMapNode url="~/Public/ViewCar.aspx" title="Manage My Car" description="Manage My Car"/>
+    </siteMapNode>
+    <siteMapNode url="~/Search.aspx" title="Search in Cars"  description="Search Page"/>
+  </siteMapNode>
+</siteMap>

@@ -25,7 +25,6 @@
 
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
-
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
@@ -79,7 +78,28 @@
                 </div>
             </div>
         </div>
-
+        <div>
+            <asp:Menu DataSourceID="SiteMapDataSource1" ID="Menu1" runat="server" 
+                    StaticDisplayLevels="2"  StaticSubMenuIndent="10px" Orientation="Horizontal">
+                    <StaticSelectedStyle BackColor="#FFCC66" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#F4fcf1" />
+                    <DynamicSelectedStyle BackColor="#FFCC66" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" 
+                      VerticalPadding="2px" />
+                    <DynamicHoverStyle BackColor="#990000" Font-Bold="False" 
+                      ForeColor="White" />
+                    <StaticHoverStyle BackColor="#990000" Font-Bold="False" 
+                      ForeColor="White" />
+                    </asp:Menu>
+             <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="0.8em" PathSeparator=" : ">
+                <CurrentNodeStyle ForeColor="#333333" />
+                <NodeStyle Font-Bold="True" ForeColor="#7C6F57" />
+                <PathSeparatorStyle Font-Bold="True" ForeColor="#5D7B9D" />
+                <RootNodeStyle Font-Bold="True" ForeColor="#5D7B9D" />
+            </asp:SiteMapPath>
+        </div>
         <div class="container body-content">
             <div class="row">
                 <div class="col-md-12">
