@@ -17,17 +17,19 @@ namespace CarServiceRecords.Application.Account
 
             IdentityResult result = manager.Create(user, Password.Text);
 
-            if (this.isCarService.Checked)
-            {
-                manager.AddToRole(user.Id, "ServiceOwner");
-            }
-            else
-            {
-                manager.AddToRole(user.Id, "Default");
-            }
+            
 
             if (result.Succeeded)
             {
+                if (this.isCarService.Checked)
+                {
+                    manager.AddToRole(user.Id, "ServiceOwner");
+                }
+                else
+                {
+                    manager.AddToRole(user.Id, "Default");
+                }
+
                 IdentityHelper.SignIn(manager, user, isPersistent: false);
 
                 // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
