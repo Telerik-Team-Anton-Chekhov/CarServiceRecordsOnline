@@ -16,7 +16,7 @@
                 <div class="panel panel-primary">
                     <div class="panel-body">
                         <div class="col-lg-4">
-                            <img class="img-responsive" src="/Uploads/<%#: Item.ImageName %>" />
+                            <img class="img-responsive" width="100" src="/Uploads/<%#: Item.ImageName %>" />
                         </div>
                         <div class="col-lg-8">
                             <p>Name: <a href="Public/ServiceDetails.aspx?serviceId=<%#: Item.Id %>"<strong><%#: Item.Name%></strong></a></p>

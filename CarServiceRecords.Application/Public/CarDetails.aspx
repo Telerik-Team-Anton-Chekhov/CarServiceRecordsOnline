@@ -3,15 +3,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h3>Car Details</h3>
     <hr />
+    <div class="row">
+        <asp:ListView 
+            ID="CarList" 
+            runat="server"
+            ItemPlaceholderID="CarItem"
+            ItemType="CarServiceRecords.Models.Car">
 
-    <asp:ListView 
-        ID="CarList" 
-        runat="server"
-        ItemPlaceholderID="CarItem"
-        ItemType="CarServiceRecords.Models.Car">
-
-        <ItemTemplate>
-            <div class="col-lg-6">
+            <ItemTemplate>
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <%#: Item.Model.Make.Name %> - <%#: Item.Model.Name %>
@@ -23,22 +22,22 @@
                         <p>Engine: <strong><%#: Item.Engine.ToString()%></strong></p>
                     </div>
                 </div>
-            </div>
-        </ItemTemplate>
+            </ItemTemplate>
 
-        <LayoutTemplate>
-            <asp:PlaceHolder runat="server" ID="CarItem"></asp:PlaceHolder>
-        </LayoutTemplate>
-    </asp:ListView>
+            <LayoutTemplate>
+                <div class="col-lg-6">
+                    <asp:PlaceHolder runat="server" ID="CarItem"></asp:PlaceHolder>
+                </div>
+            </LayoutTemplate>
+        </asp:ListView>
 
-    <asp:ListView 
-        ID="RepairsList" 
-        runat="server"
-        ItemPlaceholderID="RepairItem"
-        ItemType="CarServiceRecords.Models.RepairJob">
+        <asp:ListView 
+            ID="RepairsList" 
+            runat="server"
+            ItemPlaceholderID="RepairItem"
+            ItemType="CarServiceRecords.Models.RepairJob">
 
-        <ItemTemplate>
-            <div class="col-lg-6">
+            <ItemTemplate>
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <%#: Item.CarService.Name%>
@@ -48,11 +47,13 @@
                         <p>Service: <strong><a href="ServiceDetails.aspx?serviceId=<%# Item.CarService.Id%>"><%#: Item.CarService.Name%></a></strong></p>
                     </div>
                 </div>
-            </div>
-        </ItemTemplate>
+            </ItemTemplate>
 
-        <LayoutTemplate>
-            <asp:PlaceHolder runat="server" ID="RepairItem"></asp:PlaceHolder>
-        </LayoutTemplate>
-    </asp:ListView>
+            <LayoutTemplate>
+                <div class="col-lg-6">
+                <asp:PlaceHolder runat="server" ID="RepairItem"></asp:PlaceHolder>
+                </div>
+            </LayoutTemplate>
+        </asp:ListView>
+    </div>
 </asp:Content>

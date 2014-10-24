@@ -79,7 +79,7 @@
             </div>
         </div>
         <div>
-            <asp:Menu DataSourceID="SiteMapDataSource1" ID="Menu1" runat="server" 
+<%--            <asp:Menu DataSourceID="SiteMapDataSource1" ID="Menu1" runat="server" 
                     StaticDisplayLevels="2"  StaticSubMenuIndent="10px" Orientation="Horizontal">
                     <StaticSelectedStyle BackColor="#FFCC66" />
                     <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
@@ -98,7 +98,7 @@
                 <NodeStyle Font-Bold="True" ForeColor="#7C6F57" />
                 <PathSeparatorStyle Font-Bold="True" ForeColor="#5D7B9D" />
                 <RootNodeStyle Font-Bold="True" ForeColor="#5D7B9D" />
-            </asp:SiteMapPath>
+            </asp:SiteMapPath>--%>
         </div>
         <div class="container body-content">
             <div class="row">
